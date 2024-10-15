@@ -1,118 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP3 Responsive Design</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- Ligne avec 3 conteneurs -->
-    <div class="container mt-5">
-      <div class="row">
-        <!-- Conteneur 1 (Largeur de 50% de la page sur écrans medium et plus, 100% sur petits écrans) -->
-        <div class="col-md-6 mb-4">
-          <!-- Card avec image -->
-          <div class="card">
-            <img
-              src="./images/imagecap.jpg"
-              class="card-img-top"
-              alt="Image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Suisse</h5>
-              <p class="card-text">Bienvenue en Suisse !</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Conteneur 2 (Largeur 1/4 sur écrans medium et plus, 100% sur petits écrans) -->
-        <div class="col-md-3 mb-4">
-          <!-- Carousel -->
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./images/image1.jpg"
-                  class="d-block w-100"
-                  alt="Image 1"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./images/image2.jpg"
-                  class="d-block w-100"
-                  alt="Image 2"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./images/image3.jpg"
-                  class="d-block w-100"
-                  alt="Image 3"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TP3 Responsive Design</title>
+  <!-- 1. Lien Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- 6. Lien Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-        <!-- Conteneur 3 (Largeur 1/4 sur écrans medium et plus, 100% sur petits écrans) -->
-        <div class="col-md-3 mb-4">
-          <!-- Classe contextuelle et icône -->
-          <div class="alert alert-success" role="alert">
-            <i class="bi bi-check-circle"> Success Alert with an icon!</i> 
+<body>
+  <!-- 2. Conteneur 1 (Largeur de 50% de la page sur écrans medium et plus, 100% sur petits écrans) -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <!-- 3. Card avec image cap -->
+        <div class="card">
+          <img src="./images/imagecap.jpg" class="card-img-top" alt="Image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Suisse</h5>
+            <p class="card-text">Bienvenue en Suisse !</p>
           </div>
-
-          <!-- Citation (Blockquote) -->
-          <blockquote class="blockquote">
-            <p class="mb-0">
-              "It does not do well to dwell on dreams and forget to live."
-            </p>
-          </blockquote>
         </div>
       </div>
-    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <!-- 2. Conteneur 2 (Largeur 25% sur écrans medium et plus, 100% sur petits écrans) -->
+      <div class="col-md-3 mb-4">
+        <!-- 4. Carousel affichant des images -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/image1.jpg" class="d-block w-100" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image2.jpg" class="d-block w-100" alt="Image 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image3.jpg" class="d-block w-100" alt="Image 3" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Conteneur 3 (Largeur 25% sur écrans medium et plus, 100% sur petits écrans) -->
+      <div class="col-md-3 mb-4">
+        <!-- 5. Classe contextuelle avec icône -->
+        <div class="alert alert-success" role="alert">
+          <i class="bi bi-check-circle"></i> Success Alert with an icon!
+        </div>
+
+        <!-- 7. Blockquote avec source -->
+        <figure>
+          <blockquote class="blockquote">
+            <!-- 8. Ajout de la classe "ms-md-5" à l'élément "p" qui contient la citation. Le "ms" correspond à "margin start" qui ajoute un margin à gauche de l'élément. Le "md" correspond à la limite de la taille d'écran de largeur moyenne (ou > ou = à 768px) comme les tablettes. Le "5" est une échelle dans Bootstrap qui correspond à "3rem" ou 48px. Pour conclure, l'utilisation de cette classe ici a permis d'ajouter un espace de 48 px à gauche de l'élément p ci-dessous seulement lorsque la largeur de la page est moyenne (ou de 768 px) ou plus. Cet espace ne sera donc pas présent lorsque la page est ouverte sur des écrans plus petits comme ceux des téléphones portables. -->
+            <p class="ms-md-5">It does not do well to dwell on dreams and forget to live.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Dumbledore <cite title="Source Title">Harry Potter and The Philosopher's Stone</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
