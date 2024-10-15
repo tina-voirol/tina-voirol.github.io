@@ -1,0 +1,24 @@
+/* Fichier CSS personnalisé */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Ajout de styles supplémentaires */
+.card {
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+/* Exemple d'utilisation de ms-md-5 */
+div {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-left: 3rem; /* Ceci est l'effet de ms-md-5 : marge gauche de 3rem sur les écrans medium et plus */
+    }
+}

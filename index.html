@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP3 Responsive Design</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Ligne avec 3 conteneurs -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Conteneur 1 (Largeur de 50% de la page sur écrans medium et plus, 100% sur petits écrans) -->
+        <div class="col-md-6 mb-4">
+          <!-- Card avec image -->
+          <div class="card">
+            <img
+              src="./images/imagecap.jpg"
+              class="card-img-top"
+              alt="Image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Suisse</h5>
+              <p class="card-text">Bienvenue en Suisse !</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteneur 2 (Largeur 1/4 sur écrans medium et plus, 100% sur petits écrans) -->
+        <div class="col-md-3 mb-4">
+          <!-- Carousel -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/image1.jpg"
+                  class="d-block w-100"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/image2.jpg"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/image3.jpg"
+                  class="d-block w-100"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Conteneur 3 (Largeur 1/4 sur écrans medium et plus, 100% sur petits écrans) -->
+        <div class="col-md-3 mb-4">
+          <!-- Classe contextuelle et icône -->
+          <div class="alert alert-success" role="alert">
+            <i class="bi bi-check-circle"> Success Alert with an icon!</i> 
+          </div>
+
+          <!-- Citation (Blockquote) -->
+          <blockquote class="blockquote">
+            <p class="mb-0">
+              "It does not do well to dwell on dreams and forget to live."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
